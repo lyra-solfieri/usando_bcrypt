@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bcrypt</title>
+    <style>
+    
+
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        }
+
+        h1 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        }
+
+        h5 {
+        font-size: 16px;
+        line-height: 1.5;
+        }
+
+        div {
+        margin-bottom: 20px;
+        }
+
+        a {
+        color: #333;
+        text-decoration: none;
+        }
+
+        img {
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Estudo sobre Bcrypt: <br>Disciplina de segurança de computadores<br>Aluno:Bruno Lyra Bezerra</h1>
+    <br>
+    <div><h5>o que é o bcrypt<br>É para resolver este problema das chaves que são usados os algoritmos de hashing criptográfico, como por exemplo, o crypt. Com estes algoritmos, uma vez que a informação é criptografada, não é mais possível reverter a situação e 
+        recuperar os dados. E para poder validar os dados, no caso de login, é só calcular o hash da senha fornecida pelo usuário e comparar com o hash do banco de dados. Bem simples.
+
+        Porém, com a constante evolução da tecnologia, é possível criar algoritmos eficientes com o intuito de quebrar hashes por força bruta, e foi por isso que surgiu em 1999, o Bcrypt.
+        
+        O Bcrypt oferece uma maior segurança do que os outros algoritmos criptográficos porque contém uma variável que é proporcional à quantidade de processamento necessário para criptografar a informação desejada, tornando-o resistente a ataques do tipo “força-bruta”.
+        
+        Para você ter uma noção de como funciona o bcrypt , temos o Bcrypt generator , que é uma ferramenta online para criação de hashes de acordo com a senha inserida.
+
+
+        Salt é uma sequência de caracteres, números ou termos adicionados antes da senha, que dão aleatoriedade ao resultado da senha criptografada tornando-a mais complexa.
+
+Vamos supor um exemplo prático:
+
+    Senha = 123abc
+    Salt = 3540832967
+    Senha + Salt = 1233540832967abc
+    Senha criptografada = abc7692380453321</h5>
+</div>
+        <br>
+    <div>Documentação de como  funciona o bcrypt no flask <a href="https://flask-bcrypt.readthedocs.io/en/1.0.1/"><b>Manual</b></a></div>
+    <div>
+        <img src="{{ url_for('static', filename='img/terminator.gif') }}" alt="GIF image">
+    </div>
+</body>
+</html>
